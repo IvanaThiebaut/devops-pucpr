@@ -1,0 +1,27 @@
+{
+  "name": "devops-pucpr",
+  "version": "1.0.0",
+  "description": "Esse rep foi criado para a disciplina de Devops do curso de ADS na PucPr",
+  "main": "devops-001.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanaThiebaut/devops-pucpr.git"
+  },
+  "keywords": [],
+  "author": "Ivana Thiebaut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanaThiebaut/devops-pucpr/issues"
+  },
+  "homepage": "https://github.com/IvanaThiebaut/devops-pucpr#readme",
+  "devDependencies": {
+    "jest": "^30.1.3",
+    "jest-environment-jsdom": "^30.1.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

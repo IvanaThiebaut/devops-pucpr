@@ -10,32 +10,30 @@
     <header>
         <h1>Ateliê Tibô Cerâmicas</h1>
         <nav>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="#">Loja</a>
-            <a href="#">Contato</a>
+            <a href="contato.html">Contato</a>
         </nav>
     </header>
 
     <main>
-        <h2>Nossas Peças</h2>
+        <h2>Nossas Peças em Destaque</h2>
         <p>Descubra a beleza e a singularidade de cada item que fizemos a mão.</p>
-        <div class="product-gallery">
-            <div class="product-item">
-                <img src="imagens/vaso-moderno-terracota.jpg" alt="Vaso de cerâmica terracota">
-                <h3>Vaso Terracota</h3>
-                <p>R$ 120,00</p>
+
+        <div class="filtros-controles">
+            <div class="controle-item">
+                <label for="filtro-preco">Preço máximo: R$ </label>
+                <span id="preco-max-valor">150</span>
+                <input type="range" id="filtro-preco" min="50" max="150" value="150" step="5">
             </div>
-            <div class="product-item">
-                <img src="imagens/prato-esfumado.jpg" alt="Prato de cerâmica com efeito esfumado">
-                <h3>Prato Esfumado</h3>
-                <p>R$ 85,00</p>
-            </div>
-            <div class="product-item">
-                <img src="imagens/caneca-rustica.jpg" alt="Caneca de cerâmica rústica">
-                <h3>Caneca Rústica</h3>
-                <p>R$ 70,00</p>
+            <div class="controle-item">
+                <button id="btn-ordenar-menor">Ordenar por Menor Preço</button>
+                <button id="btn-ordenar-maior">Ordenar por Maior Preço</button>
             </div>
         </div>
+
+        <div id="product-gallery" class="product-gallery">
+            </div>
     </main>
 
     <footer>
@@ -50,6 +48,7 @@
         <p>&copy; 2025 Tibô. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="produtos.js"></script>
     <script src="devops-001.js"></script>
 </body>
 </html>
